@@ -2,13 +2,9 @@
   <img src="logo-banner.png" width="640" alt="StatusStash">
 </p>
 
-# StatusStash
+<p align="center"> Status: academic prototype &middot; Version: 0.2.0 &middot; Platform: Chrome / Edge (Chromium, MV3)</p>
 
-> StatusStash is a Manifest V3 Chrome extension that saves media from WhatsApp Web statuses. Because WhatsApp decrypts media in the browser and exposes it as a same-origin blob URL, a content script can fetch it directly, with no network interception and no key handling. Adds a draggable floating button, MIME-based naming and SHA-256 deduplication.
 
-**Status:** academic prototype &middot; **Version:** 0.2.0 &middot; **Platform:** Chrome / Edge (Chromium, MV3) &middot; **License:** MIT
-
----
 
 ## Table of Contents
 
