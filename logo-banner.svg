@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 300" width="960" height="300">
+  <!-- Self-contained dark card so the banner reads correctly on both light
+       and dark GitHub themes. Centered lockup: text-anchor="middle" keeps it
+       balanced without depending on measured glyph widths. -->
+  <rect x="1" y="1" width="958" height="298" rx="24"
+        fill="#111B21" stroke="#FFFFFF" stroke-opacity="0.10" stroke-width="2"/>
+
+  <!-- App mark, same geometry as icon.svg, centered at x=480 -->
+  <g transform="translate(432,48) scale(0.75)">
+    <rect width="128" height="128" rx="28" fill="#00A884"/>
+    <g fill="none" stroke="#FFFFFF" stroke-width="12"
+       stroke-linecap="round" stroke-linejoin="round">
+      <path d="M64 26 V80"/>
+      <path d="M40 58 L64 84 L88 58"/>
+      <path d="M34 102 H94"/>
+    </g>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="480" y="204" text-anchor="middle"
+        font-family="Arial, 'Liberation Sans', sans-serif"
+        font-size="52" font-weight="bold" fill="#FFFFFF"
+        letter-spacing="-0.5">StatusStash</text>
+
+  <!-- Tagline -->
+  <text x="480" y="243" text-anchor="middle"
+        font-family="Arial, 'Liberation Sans', sans-serif"
+        font-size="21" fill="#8696A0">Save WhatsApp Web status media</text>
+</svg>

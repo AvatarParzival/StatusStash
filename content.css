@@ -1,0 +1,85 @@
+/* Floating save button. Fixed to the viewport and draggable, so it never
+   collides with WhatsApp's own viewer controls.
+
+   Default anchor is the RIGHT edge via right/bottom, which keeps it tracking
+   the window edge on resize. Dragging switches to inline left/top. */
+
+.ss-btn {
+  position: fixed;
+  right: 24px;
+  bottom: 110px;
+  z-index: 2147483647;
+
+  display: none;
+  align-items: center;
+  gap: 8px;
+
+  box-sizing: border-box;
+  min-height: 44px;
+  margin: 0;
+  padding: 12px 20px;
+  border: 1px solid rgb(255 255 255 / 0.18);
+  border-radius: 999px;
+
+  font: 600 14px/1 system-ui, -apple-system, 'Segoe UI', sans-serif;
+  color: #fff;
+  background: #00a884;
+  box-shadow: 0 6px 20px rgb(0 0 0 / 0.45);
+
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+  transition: filter 0.15s ease, transform 0.1s ease, background 0.15s ease;
+}
+
+.ss-btn.ss-show {
+  display: inline-flex;
+}
+
+.ss-btn:hover {
+  filter: brightness(1.12);
+}
+
+.ss-btn:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+.ss-btn:active,
+.ss-btn[data-drag='1'] {
+  cursor: grabbing;
+  transform: scale(0.97);
+}
+
+.ss-btn .ss-ico {
+  flex: 0 0 auto;
+  display: block;
+}
+
+.ss-btn .ss-txt {
+  white-space: nowrap;
+}
+
+.ss-btn[data-state='ok'] {
+  background: #1d9b5e;
+}
+
+.ss-btn[data-state='warn'] {
+  background: #b58105;
+}
+
+.ss-btn[data-state='err'] {
+  background: #c0392b;
+}
+
+.ss-btn[data-state='busy'] {
+  background: #5a5a5a;
+  cursor: progress;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ss-btn {
+    transition: none;
+  }
+}

@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        width: 300px;
+        margin: 0;
+        padding: 12px;
+        font: 13px system-ui, -apple-system, sans-serif;
+      }
+      h1 {
+        margin: 0 0 8px;
+        font-size: 14px;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        max-height: 320px;
+        overflow-y: auto;
+      }
+      li {
+        list-style: none;
+        padding: 6px 0;
+        border-top: 1px solid #eee;
+      }
+      .n {
+        font-weight: 600;
+        word-break: break-all;
+      }
+      .m {
+        color: #777;
+        font-size: 11px;
+      }
+      button {
+        margin-top: 10px;
+        padding: 5px 10px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Saved media</h1>
+    <ul id="list"></ul>
+    <button id="clear">Clear history</button>
+    <script src="popup.js"></script>
+  </body>
+</html>
